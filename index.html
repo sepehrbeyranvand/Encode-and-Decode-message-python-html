@@ -1,0 +1,81 @@
+<html>
+<head>
+  <title>بععععع</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1>BABAEEEI</h1>
+    </div>
+
+    <ul class="nav nav-tabs" id="tabs" data-tabs="tabs">
+      <li role="presentation"> <a href="#decode" data-toggle="tab">بازگشایی</a></li>
+    </ul>
+
+    <div id="my-tab-content" class="tab-content">
+
+      <div class="tab-pane" id="decode">
+        <div>
+          <h2>بازگشایی رمز</h2>
+          <p style="text-align: center;" class="alert alert-info">
+            به منظور یافتن متن پنهان شده در عکس,فایل موردنظر خود را در قسمت پایین آپلود کرده و سپس دکمه بازگشایی را بزنید.
+          </p>
+          <form class="form">
+            <div class="form-group">
+              <input class="form-control" type="file" name="decodeFile" onchange="previewDecodeImage()">
+            </div>
+            <div class="form-group">
+              <button id="submitbtn" class="decode btn btn-success pull-right" onclick="decodeMessage()">بازگشایی رمز</button>
+            </div>
+          </form>
+          <div class="clearfix"></div>
+        </div>
+        <div class="binary-decode" style="display: none;">
+          <h3>پیام مخفی شده</h3>
+          <textarea class="form-control message" rows="10" style="word-wrap:break-word;">
+          </textarea>
+        </div>
+        <div class="decode" style="display: none;">
+          <h3>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
+          <canvas></canvas>
+        </div>
+      </div>
+
+    </div>
+<button class="btn btn-warning btn-help" data-toggle="modal" data-target="#myModal" >راهنما</button>
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+  
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">راهنمایی مفید</h4>
+      </div>
+      <div class="modal-body">
+        <p>اگر بعد از اون همه توضیحات بازم به کمک نیاز داری به آقا سپهر پیام بده😒🙄</p>
+        <a href="https://telegram.me/its_sepehrb" target="_blank">کلیک کن</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" style="float: left;" class="btn btn-default" data-dismiss="modal">بستن</button>
+      </div>
+    </div>
+    
+  </div>
+</div>
+  <style>
+    canvas {
+      max-width: 100%;
+    }
+    body{
+        direction: rtl;
+    }
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script type="text/JavaScript" src="script.js"></script>
+</body>
+</html>
