@@ -1,3 +1,6 @@
-from stegano import lsb
-secret = lsb.hide("Iran.png", "SepehrBeiranvand!")
-secret.save("Name.png")
+from stegano import lsb #Import stegano library
+secret = lsb.hide("Iran.png", "SepehrBeiranvand!") #choose your image and your text
+secret.save("Name.png") #set a name or your new image file which contains a secret message
+
+#SepehrBeiranvand
+#https://www.sepehrbey.ir
